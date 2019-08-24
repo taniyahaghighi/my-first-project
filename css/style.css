@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: vazir;
+    direction: rtl;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(65, 65, 80);
+    font-size: 1rem;
+   
+}
+
+.personal-site {
+    color: rgb(238, 236, 236);
+    font-size: 1.3rem;
+    padding: 10px;
+
+}
+.menu-bottuns{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.menu-bottuns a {
+    text-decoration: none;
+    color: rgb(161, 158, 158);
+    transition: .3s;
+    text-align: center;
+    font-size: 1rem;
+    padding: 15px;
+
+}
+
+.menu-bottuns a:hover {
+    background-color: rgba(181, 180, 190, 0.294);
+}
+
+.menu-bottuns a#basic-page {
+    color: white;
+}
+
+form input#searchtxt {
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 0;
+    cursor: text;
+    background-color: #f8f4f4;
+    margin: 10px;
+    padding-right: 10px;
+
+}
+
+ form input#searchtxt:hover {
+    background-color: white;
+
+}
+
+button.searchbtn {
+    background-color: rgb(65, 65, 80);
+    color: rgb(6, 158, 6);
+    border: 1px solid rgb(5, 177, 5);
+    border-radius: 5px;
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+button.searchbtn:hover {
+    background-color: rgba(181, 180, 190, 0.294);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(161, 160, 160);
+    height: 500px;
+    color: white;
+
+}
+
+.header .para {
+    margin: 0 auto;
+ max-width: 1000px;
+}
+
+.header .join {
+    background: rgb(219, 187, 1);
+    border: 0;
+    outline: 0;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.733);
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.header .join:hover {
+    background-color: rgb(253, 221, 38);
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.upperlayout {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.upperlayout img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.column {
+    text-align: center;
+    margin: 10px;
+}
+
+button.details {
+    width: 130px;
+    line-height: 35px;
+    background-color: rgb(7, 138, 219);
+    outline: 0;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+button.details:hover{
+    background-color: rgba(7, 138, 219, 0.397);
+}
+
+.middlelayout{
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+div.first-para h1{
+    margin-bottom: 20px;
+}
+
+div.first-para {
+    margin-left: 20px;
+}
+
+div.img-holder1 img,
+div.img-holder2 img{
+    width: 500px;
+    height: 500px;
+}
+
+.lowerlayout {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+div.second-para h1{
+    margin-bottom: 20px;
+}
+
+div.second-para {
+    margin-right: 20px;
+}
+
+footer {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.reversing {
+    margin: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(89, 182, 212);
+}
+
+@media(max-width:992px) {
+    div.personal-site {
+        width: 60%;
+    }
+
+    div.row {
+        height: 30%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    div.menu-bottuns {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .middlelayout {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    div.second-para {
+        margin-right: 0;
+    }
+
+    .lowerlayout {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.img-holder1 img,
+    div.img-holder2 img {
+        width: 380px;
+        height: 300px;
+    }
+
+    .upperlayout {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.column{
+    font-size: 1.1rem;
+}
+
+.header{
+    height: 700px;
+}
+
+.header .para{
+font-size: 1.1rem;
+text-align: justify;
+margin: 0 auto;
+width: 90%;
+}
+div.second-para{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+div.first-para{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+}
